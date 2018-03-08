@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="icon" type="image/png" href="images/icon.png"/>
-        <title>Historical Events - Human Rights Website</title>
+        <title>Human Rights Website</title>
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -12,21 +12,34 @@
     <body> <!-- preview with ctrl+shift+h-->
         <nav>
             <div class="nav-wrapper teal lighten-2">
-                <a href="#" class="brand-logo center">Human Rights</a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="history">History</a></li>
-                    <li><a href="udhr">UDHR</a></li>
-                    <li><a href="tank-man">Tank Man</a></li>
+                <a href="../index.html" class="brand-logo center">Human Rights</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="history.html">History</a></li>
+                    <li class="active"><a href="historical-events.html">Historical Events</a></li>
+                    <li><a href="tank-man.html">Tank Man</a></li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active"><a href="historical-events">Events</a></li>
-                    <li><a href="current-issues">Issues</a></li>
-                    <li><a href="references">References</a></li>
+                    <li><a href="udhr.html">UDHR</a></li>
+                    <li><a href="current-issues.html">Current Issues</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+                <ul id="mobile-demo" class="side-nav">
+                    <li><a href="../index.html">Human Rights</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="udhr.html">UDHR</a></li>
+                    <li><a href="tank-man.html">Tank Man</a></li>
+                    <li class="active"><a href="historical-events.html">Historical Events</a></li>
+                    <li><a href="current-issues.html">Current Issues</a></li>
+                    <li><a href="references.html">References</a></li>
                 </ul>
             </div>
         </nav>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
     </body>
 </html>
