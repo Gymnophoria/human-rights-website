@@ -8,6 +8,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <style>
+            a:hover {
+                color: #ff9a9a;
+                text-decoration: none;
+            }
+
+	        .flow-text li {
+		        line-height: 120%;
+		        margin-top: 30px;
+	        }
+        </style>
     </head>
     <body> <!-- preview with ctrl+shift+h-->
         <nav>
@@ -36,17 +48,26 @@
             </div>
         </nav>
 
+        <div class="row">
+	        <div class="col s12">
+		        <h1 class="center-align">Current Human Rights Issues and Violations</h1>
+	        </div>
+	        <img style="width: 100%; height: 100%;" src="../images/trump.jpg"/>
+	        <div class="col s10 offset-s1">
+		        <ol class="flow-text">
+			        <li><h5>Parker</h5>Parker often disables others from getting an education, blocking a basic human right.</li>
+			        <li><h5>Donald Trump</h5>Donald Trump often discriminates against hispanics, denying their right to no discrimination.</li>
+			        <li><h5>China</h5>China doesn't allow a democracy to take place and also treats many civilians with horrible working and living conditions.</li>
+			        <li><h5>North Korea</h5>North Korea does not allow freedom of press; they spread their own propaganda.</li>
+			        <li><h5>Russia</h5>Russia does not allow the right to a free trial; they will arrest without a proper trial.</li>
+		        </ol>
+	        </div>
+        </div>
+
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script>
             /* global $ */$(".button-collapse").sideNav();
         </script>
-        
-        <style>
-            a:hover {
-              color: #ff9a9a;
-              text-decoration: none;
-            }
-        </style>
     </body>
 </html>
